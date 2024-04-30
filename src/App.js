@@ -12,8 +12,8 @@ export const ACTIONS = {
 }
 
 function evaluate({currentOperand, previousOperand, operation }) {
-  const prev = parseFloat(currentOperand)
-  const current = parseFloat(previousOperand)
+  const prev = parseFloat(previousOperand)
+  const current = parseFloat(currentOperand)
   if (isNaN(prev) || isNaN(current)) return ""
   let computation = ""
   switch (operation) {
